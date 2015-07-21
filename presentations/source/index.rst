@@ -14,7 +14,7 @@ useblocks Präsentationen
     .. rv_small::
 
 
-        | Knappe Einführung in die Steuerung:
+        | Knappe Einführung in die Bedienung:
         | nach |right| bitte ...
 
         |copy| Team `useblocks <https://useblocks.github.io>`_, 2015

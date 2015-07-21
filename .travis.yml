@@ -16,6 +16,8 @@ install:
   - "pip install sphinx"
   - "pip install sphinxcontrib-plantuml"
   - "pip install sphinxjp.themes.revealjs"
+  - "pip install sphinxcontrib-googlechart"
+
 
 script:
   - cd presentations
