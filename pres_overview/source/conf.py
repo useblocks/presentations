@@ -122,11 +122,14 @@ html_theme = 'revealjs'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
+# See https://github.com/tell-k/sphinxjp.themes.revealjs#customize-config
 # theme: black/white/league/beige/sky/night/serif/simple/solarized
 html_theme_options = {
     "theme": "league",
-    "width": 1400,
-    "height": 600,
+    "width": 960,
+    "height": 700,
+    "margin": 0.01,
+    "history": False,
     }
 
 # Add any paths that contain custom themes here, relative to this directory.

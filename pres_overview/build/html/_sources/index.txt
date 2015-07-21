@@ -3,22 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to datablocks overview's documentation!
-===============================================
+useblocks Präsentationen
+=======================
 
-Contents:
+.. revealjs::
 
-.. toctree::
-   :maxdepth: 2
+    .. image:: _static/ub_logo.png
+        :width: 100px
 
-   start.rst
+    Präsentations Server vom `Team useblocks <https://useblocks.github.io>`_
 
 
+    .. toctree::
+       :maxdepth: 1
 
-Indices and tables
-==================
+       presentations/datablocks_overview.rst
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    .. rv_small::
+        Die Präsentationen können mit der Maus und den Pfeiltasten gesteuert werden.
+
+        Welche Richtungen möglich sind, kann man unten rechts erkennen.
 

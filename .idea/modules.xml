@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/datablocks-pres.iml" filepath="$PROJECT_DIR$/.idea/datablocks-pres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../useblocks-pres/.idea/useblocks-pres.iml" filepath="$PROJECT_DIR$/../useblocks-pres/.idea/useblocks-pres.iml" />
     </modules>
   </component>
 </project>
