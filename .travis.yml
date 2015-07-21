@@ -9,7 +9,7 @@ before_install:
 - "sudo apt-get install graphviz"
 - mkdir _website
 - cd _website
-- "git clone -b gh-pages http://useblocks.github.com/presentations ."
+- "git clone -b gh-pages http://github.com/useblocks/presentations ."
 - cd ..
 
 install:
