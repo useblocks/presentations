@@ -33,8 +33,4 @@ after_success:
   - touch .nojekyll
   - git add -A
   - git commit -m "Updated useblocks presentations website via travisci"
-  - echo $DEPLOY_KEY > deploy_key.pem
-  - chmod 600 deploy_key.pem # this key should have push access
-  - ssh-add deploy_key.pem
-  - git remote add deploy https://github.com/useblocks/presentations
-  - git push deploy gh-pages
+  - git push --force --quiet "https://$DEPLOY_KEY@github.com/useblocks/presentations gh-pages /dev/null 2>&1
