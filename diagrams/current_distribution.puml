@@ -1,0 +1,22 @@
+@startuml
+!include config.puml
+
+object Metrics {
+As many as you can get
+}
+
+object Report {
+Huge Excel-Report
+}
+
+object eMail {
+One eMail rule them all
+}
+
+object Users {
+Developers, Teamleaders, Managers, ...
+}
+Metrics -> Report
+Report -> eMail
+eMail -> Users
+@enduml

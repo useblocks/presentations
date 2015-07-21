@@ -1,0 +1,70 @@
+@startuml
+!include config.puml
+
+component BI COLOR1
+
+node "Humans/Machines" {
+    interface Measurement
+    interface Controlling
+    interface Action
+    interface View
+}
+BI <-l- Measurement
+BI <-l- Controlling
+BI <-l- Action
+BI <-l- View
+
+node "Targets" {
+    interface Borders
+    interface CompanyTarget
+    interface CurrentTarget
+}
+BI <- Borders
+BI <- CompanyTarget
+BI <- CurrentTarget
+
+node "Information" {
+    interface Risk
+    interface TargetEffect
+    interface ActionDescription
+    interface Process
+    interface Interpretation
+    interface Period
+    interface Status
+}
+Risk - BI
+TargetEffect - BI
+ActionDescription - BI
+Process - BI
+Interpretation - BI
+Period - BI
+Status - BI
+
+
+interface Processes
+interface Actions COLOR2
+interface Usages COLOR2
+interface Exports
+BI <-d- Processes
+BI <.d. Actions
+BI <.d. Usages
+BI <-d- Exports
+
+
+interface Statistics
+interface Comments
+BI <-d- Statistics
+BI <-d- Comments
+
+interface Alarms COLOR2
+interface Dashboards COLOR2
+interface Collectors COLOR2
+interface Measurements COLOR2
+interface Metrics COLOR2
+BI <.d. Alarms
+BI <.d. Dashboards
+BI <.d. Collectors
+BI <.d. Measurements
+BI <.d. Metrics
+
+@enduml
