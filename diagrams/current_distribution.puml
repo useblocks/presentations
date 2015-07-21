@@ -2,7 +2,7 @@
 !include config.puml
 
 object Metriken {
-Zuviel mitnehmen \lwie möglich
+Soviele mitnehmen \lwie möglich
 }
 
 object Report {
@@ -10,7 +10,7 @@ Alles in einen großen \lExcel-Report packen
 }
 
 object eMail {
-Eine einzelne E-Mail an \lwirklich Alle verschicken
+Eine einzelne E-Mail an \lwirklich alle verschicken
 }
 
 object Mitarbeiter {

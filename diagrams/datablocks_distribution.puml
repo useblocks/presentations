@@ -18,7 +18,7 @@ Angehängter Excel-Report
 }
 
 object Wiki COLOR1 {
-Anlage einer neune Report-Seite
+Anlage einer neuen Report-Seite
 }
 
 object Dashboard COLOR1 {
@@ -30,7 +30,7 @@ Poste Probleme und Report-Link \lins Team-Chat
 }
 
 object Webhook COLOR1 {
-Informieren externen Service
+Externen Service informieren
 }
 
 object Entwickler COLOR3
