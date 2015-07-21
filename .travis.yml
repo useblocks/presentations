@@ -13,7 +13,7 @@ before_install:
 - cd ..
 
 install:
-  - "pip install ablog"
+  - "pip install sphinx"
   - "pip install sphinxcontrib-plantuml"
   - "pip install sphinxjp.themes.revealjs"
 
