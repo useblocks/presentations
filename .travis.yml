@@ -6,7 +6,9 @@ python:
 sudo: required
 
 before_install:
-- eval `ssh-agent -s`
+- git config --global user.name "Daniel Woste"
+- git config --global user.email "daniel.woste@useblocks.com"
+- git config --global push.default simple
 - "sudo apt-get install graphviz"
 - mkdir _website
 - cd _website
@@ -23,14 +25,13 @@ install:
 script:
   - cd presentations
   - make html
-
-after_success:
-  - git config --global user.name "Daniel Woste"
-  - git config --global user.email "daniel.woste@useblocks.com"
-  - git config --global push.default simple
-  - cp -r build/html/* _website/
+  - cd ..
+  - cp -r presentations/build/html/* _website/
   - cd _website
   - touch .nojekyll
   - git add -A
   - git commit -m "Updated useblocks presentations website via travisci"
   - git push --force --quiet "https://$DEPLOY_KEY@github.com/useblocks/presentations gh-pages" > /dev/null 2>&1
+
+after_success:
+
