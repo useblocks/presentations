@@ -4,8 +4,10 @@
 skinparam backgroundColor white
 
 ' component
-skinparam componentFontSize 17
-skinparam componentInterfaceFontSize 5
+skinparam componentFontSize 30
+skinparam interfaceFontSize 20
+skinparam interfaceFontStyle bold
+skinparam nodeFontSize 25
 
 ' object
 skinparam objectFontSize 17

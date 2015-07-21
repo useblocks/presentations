@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# datablocks overview documentation build configuration file, created by
+# useblocks overview documentation build configuration file, created by
 # sphinx-quickstart on Tue Jul 21 07:49:15 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -55,9 +55,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'datablocks overview'
-copyright = '2015, Daniel'
-author = 'Daniel'
+project = 'useblocks Praesentationen'
+copyright = '2015, useblocks team'
+author = 'useblocks team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -217,7 +217,7 @@ html_use_index = False
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'datablocksoverviewdoc'
+htmlhelp_basename = 'useblocksoverviewdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -239,7 +239,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'datablocksoverview.tex', 'datablocks overview Documentation',
+  (master_doc, 'useblocksoverview.tex', 'useblocks overview Documentation',
    'Daniel', 'manual'),
 ]
 
@@ -269,7 +269,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'datablocksoverview', 'datablocks overview Documentation',
+    (master_doc, 'useblocksoverview', 'useblocks overview Documentation',
      [author], 1)
 ]
 
@@ -283,8 +283,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'datablocksoverview', 'datablocks overview Documentation',
-   author, 'datablocksoverview', 'One line description of project.',
+  (master_doc, 'useblocksoverview', 'useblocks overview Documentation',
+   author, 'useblocksoverview', 'One line description of project.',
    'Miscellaneous'),
 ]
 

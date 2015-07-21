@@ -1,58 +1,57 @@
 @startuml
 !include config.puml
 
-object Metrics {
-Take only what your customers need
+object Metriken {
+Nur das nehmen, was die Kunden brauchen
 }
 
-object DeveloperReport COLOR2 {
-automatically update weekly
+object EntwicklerReport COLOR2 {
+Mit jedeM CodePUSH ein Update
 }
 
 object ManagementReport COLOR2 {
-automatically update monthly
+Wöchentliche, automatische Updates
 }
 
 object eMail COLOR1 {
-Send as Excel-Export
+Angehängter Excel-Report
 }
 
 object Wiki COLOR1 {
-Create a new report page
+Anlage einer neune Report-Seite
 }
 
 object Dashboard COLOR1 {
-Integrate in the Ticket-System Dashboard
+Integrieren ins Dashboard \ldes Ticket-Systems
 }
 
 object Chat COLOR1 {
-Send link to Team-Channel
-           }
-
-object Webhook COLOR1 {
-Inform external Service
+Poste Probleme und Report-Link \lins Team-Chat
 }
 
-object Developer COLOR3
-object Teamleader COLOR3
+object Webhook COLOR1 {
+Informieren externen Service
+}
+
+object Entwickler COLOR3
+object Teamleiter COLOR3
 object Manager COLOR3
 object Service COLOR3
 
-Metrics --> DeveloperReport
-Metrics --> ManagementReport
-DeveloperReport --> Wiki
-DeveloperReport --> Chat
-DeveloperReport --> Dashboard
+Metriken --> EntwicklerReport
+Metriken --> ManagementReport
+EntwicklerReport --> Wiki
+EntwicklerReport --> Chat
+EntwicklerReport --> Dashboard
 
 ManagementReport --> eMail
 ManagementReport --> Webhook
 
-Wiki --> Developer
-Wiki --> Teamleader
+Dashboard --> Entwickler
+Wiki --> Teamleiter
 Wiki --> Manager
-Chat --> Developer
-Chat --> Teamleader
-Dashboard --> Teamleader
+Chat --> Entwickler
+Dashboard --> Teamleiter
 eMail --> Manager
 Webhook --> Service
 

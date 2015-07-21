@@ -1,26 +1,56 @@
-.. datablocks overview documentation master file, created by
-   sphinx-quickstart on Tue Jul 21 07:49:15 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. include:: includes.rst
+
+.. _start:
 
 useblocks Präsentationen
 ========================
 
 .. revealjs::
-
-    .. image:: _static/ub_logo.png
-        :width: 100px
-
-    Präsentations Server vom `Team useblocks <https://useblocks.github.io>`_
+    useblocks Präsentations-Server
 
 
-    .. toctree::
-       :maxdepth: 1
-
-       presentations/datablocks_overview.rst
+    :doc:`datablocks_funktionen`
 
     .. rv_small::
-        Die Präsentationen können mit der Maus und den Pfeiltasten gesteuert werden.
 
-        Welche Richtungen möglich sind, kann man unten rechts erkennen.
 
+        | Knappe Einführung in die Steuerung:
+        | nach |right| bitte ...
+
+        |copy| Team `useblocks <https://useblocks.github.io>`_, 2015
+
+        .. image:: _static/ub_logo.png
+            :width: 50px
+
+
+
+.. revealjs::
+
+    .. revealjs:: Einführung Teil 1
+
+        Unsere Präsentationen basieren auf `REVEAL.JS <http://lab.hakim.se/reveal-js/>`_.
+
+        Gesteuert werden kann mit der Tastatur, der Maus oder dem Finger auf dem Smartphone.
+
+        Kapitel können einfach mit |left| und |right| erreicht werden.
+
+        .. rv_small::
+            Nach |down| bitte ...
+
+    .. revealjs:: Einführung Teil 2
+
+        Unterkapitel befinden sich immer unterhalb der Kapitel.
+
+        Dort wird mit |up| und |down| navigiert.
+
+        .. rv_small::
+            Zum letzten Mal nach |down| bitte ...
+
+    .. revealjs:: Einführung Teil 3
+
+        Eine Übersicht aller Seiten erreicht man mit der ESC-Taste.
+
+        Ein ZURÜCK im Browser führt in der Regel zu unserer Ausgangsseite.
+
+        .. rv_small::
+            Zurück zum Start? |left| bitte ...

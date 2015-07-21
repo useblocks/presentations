@@ -1,0 +1,18 @@
+HOWTO
+=====
+
+Init
+----
+1. mkdir _website
+2. git clone http://github.com/useblocks/presentations.git -b gh-pages .
+
+
+Update
+------
+1. make html im Verzeichnis presentations
+2. HTML-Daten nach _website kopieren:
+    cp -r presentations/build/html/* _website/
+3. in _website
+    git add -A
+    git commit -m "website update"
+    git push origin gh_pages

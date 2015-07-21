@@ -1,22 +1,23 @@
 @startuml
 !include config.puml
 
-object Metrics {
-As many as you can get
+object Metriken {
+Zuviel mitnehmen \lwie möglich
 }
 
 object Report {
-Huge Excel-Report
+Alles in einen großen \lExcel-Report packen
 }
 
 object eMail {
-One eMail to rule them all
+Eine einzelne E-Mail an \lwirklich Alle verschicken
 }
 
-object Users {
-Developers, Teamleaders, Managers, ...
+object Mitarbeiter {
+Developers, Teamleaders,\lManagers, ...
 }
-Metrics -> Report
+Metriken -> Report
 Report -> eMail
-eMail -> Users
+eMail -> Mitarbeiter
+
 @enduml

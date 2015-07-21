@@ -1,0 +1,30 @@
+language: python
+
+python:
+  - "3.4"
+
+sudo: required
+
+before_install:
+- "sudo apt-get install graphviz"
+- mkdir _website
+- "git clone -b gh-pages http://useblocks.github.com/presentations ."
+
+install:
+  - "pip install ablog"
+  - "pip install sphinxcontrib-plantuml"
+  - "sphinxjp.themes.revealjs"
+
+script:
+  - cd presentations
+  - make html
+
+after_success:
+  - git config --global user.name "Daniel Woste"
+  - git config --global user.email "daniel.woste@useblocks.com"
+  - git config --global push.default simple
+  - cp build/* ../_website
+  - cd ../website
+  - git add -A
+  - git commit -m "Updated useblocks presentations website via travisci"
+  - git push origin gh-pages

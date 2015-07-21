@@ -1,5 +1,6 @@
 .idea
 build/
+_website
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

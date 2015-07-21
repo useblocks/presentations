@@ -3,7 +3,7 @@
 
 component BI COLOR1
 
-node "Humans/Machines" {
+node "Menschen/Machines" {
     interface Measurement
     interface Controlling
     interface Action
@@ -14,7 +14,7 @@ BI <-l- Controlling
 BI <-l- Action
 BI <-l- View
 
-node "Targets" {
+node "Ziele" {
     interface Borders
     interface CompanyTarget
     interface CurrentTarget
@@ -23,7 +23,7 @@ BI <- Borders
 BI <- CompanyTarget
 BI <- CurrentTarget
 
-node "Information" {
+node "Informationen" {
     interface Risk
     interface TargetEffect
     interface ActionDescription
