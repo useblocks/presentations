@@ -8,12 +8,11 @@ useblocks Präsentationen
 .. revealjs::
     useblocks Präsentations-Server
 
+    Präsentationen:
 
     :doc:`datablocks_funktionen`
 
     .. rv_small::
-
-
         | Knappe Einführung in die Bedienung:
         | nach |right| bitte ...
 
