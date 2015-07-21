@@ -8,7 +8,9 @@ sudo: required
 before_install:
 - "sudo apt-get install graphviz"
 - mkdir _website
+- cd _website
 - "git clone -b gh-pages http://useblocks.github.com/presentations ."
+- cd ..
 
 install:
   - "pip install ablog"
@@ -24,7 +26,8 @@ after_success:
   - git config --global user.email "daniel.woste@useblocks.com"
   - git config --global push.default simple
   - cp build/* ../_website
-  - cd ../website
+  - cd ../_website
+  - touch .nojekyll
   - git add -A
   - git commit -m "Updated useblocks presentations website via travisci"
   - git push origin gh-pages
