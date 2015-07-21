@@ -24,12 +24,16 @@ script:
   - make html
 
 after_success:
+  - cat $DEPLOY_KEY > .travis/deploy_key.pem
   - git config --global user.name "Daniel Woste"
   - git config --global user.email "daniel.woste@useblocks.com"
   - git config --global push.default simple
-  - cp build/* ../_website
+  - cp -r build/htrml/* ../_website
   - cd ../_website
   - touch .nojekyll
   - git add -A
   - git commit -m "Updated useblocks presentations website via travisci"
-  - git push origin gh-pages
+  - chmod 600 .travis/deploy_key.pem # this key should have push access
+  - ssh-add .travis/deploy_key.pem
+  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+  - git push deploy gh-pages
