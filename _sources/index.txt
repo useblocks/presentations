@@ -17,7 +17,7 @@ useblocks Präsentationen
     .. toctree::
        :maxdepth: 1
 
-       presentations/datablocks_overview.rst
+       datablocks_overview.rst
 
     .. rv_small::
         Die Präsentationen können mit der Maus und den Pfeiltasten gesteuert werden.

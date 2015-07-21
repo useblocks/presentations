@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>datablocks overview &mdash; datablocks overview 1.0 Dokumentation</title>
+
+    
+
+    
+<link rel="stylesheet" href="_static/css/reveal.css">
+<link rel="stylesheet" href="_static/css/theme/league.css" id="theme">
+<link rel="stylesheet" href="_static/lib/css/zenburn.css">
+<link rel="stylesheet" href="_static/revealjs.css" type="text/css" />
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if(window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '_static/css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="_static/lib/js/html5shiv.js"></script>
+    <![endif]-->
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+  <div class="section" id="datablocks-overview">
+<h1>datablocks overview<a class="headerlink" href="#datablocks-overview" title="Link zu dieser Überschrift">¶</a></h1>
+<section>
+<h2>What is datablocks</h2>
+<blockquote class="first">
+<div>A rough overview about its functions</div></blockquote>
+<small class="last">
+Created by the <a class="reference external" href="http://useblocks.github.io">useblocks team</a></small>
+</section>
+<section>
+<section class="first">
+<h2>How a metric becomes a Business Indicator</h2>
+<small class="first">
+Our datablocks vision</small>
+<p class="google_chart">
+<img src="_images/google_chart-2540eac1a85c62493c921e853c72011444154426.png" alt="linechart { teamA: 15, 35, 20, 40
+teamA.color: ffcc00
+teamA.axis: x
+teamA.axis_label: &quot;2w ago&quot;, &quot;today&quot;
+teamB: 60, 75, 60, 30
+teamB.color: A2AB58
+teamC: 10, 26, 32, 26
+teamC.color: 67BCDB
+teamD: 20, 60, 50, 80
+teamD.color: E44424 }" />
+</p>
+<small class="last">
+<ul class="first last simple">
+<li>What is good? What is bad?</li>
+<li>Which Team is in the lead?</li>
+<li>For what is it good for?</li>
+<li>Who is interested in this?</li>
+</ul>
+</small>
+</section>
+<section class="last">
+<h2>datablocks BI Extensions</h2>
+<p class="first last plantuml">
+<img src="_images/plantuml-9e1137ed0cf04301947c0ccbc69c389abaaa2e95.png" alt="!include ../diagrams/datablocks_bi.puml" />
+</p>
+</section>
+</section>
+<section>
+<section class="first">
+<h2>metric service landscape</h2>
+<p class="first plantuml">
+<img src="_images/plantuml-f2e623c7f3051c3cc9ceec3dc59df945b444d136.png" alt="!include ../diagrams/metric_services.puml" />
+</p>
+<small class="last">
+<table border="1" class="first docutils">
+<colgroup>
+<col width="25%" />
+<col width="20%" />
+<col width="31%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Collectors</th>
+<th class="head">Storages</th>
+<th class="head">Dashboards</th>
+<th class="head">Suites</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>logstash</td>
+<td>influxdb</td>
+<td>kibana</td>
+<td>Prometheus</td>
+</tr>
+<tr class="row-odd"><td>TCollector</td>
+<td>opentsdb</td>
+<td>grafana</td>
+<td>Jasper</td>
+</tr>
+<tr class="row-even"><td>Heka</td>
+<td>Graphite</td>
+<td>Graphite-Web</td>
+<td>Pentaho</td>
+</tr>
+<tr class="row-odd"><td>Zato</td>
+<td>KairosDB</td>
+<td>Dashing</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>fluentd</td>
+<td>SciDB</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Scrapy</td>
+<td>graylog</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Nutch</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="last">And do not forget: IBM, SAP, Oracle, Microsoft, Qlik, ...</p>
+</small>
+</section>
+<section class="last">
+<h2>datablocks Service Integration</h2>
+<p class="first">datablocks integrates in existing service landscapes and extends them with special functions.</p>
+<p class="plantuml">
+<img src="_images/plantuml-7eefcd4ef02fe208c38dbc78accd35954000a792.png" alt="!include ../diagrams/datablocks_services.puml" />
+</p>
+<small class="last">
+<p class="first">And it provides an overall Web User Interface for all services.</p>
+<p class="last">Without disabling direct access to their specific Interfaces (Browser, APIs, ...)</p>
+</small>
+</section>
+</section>
+<section>
+<section class="first">
+<h2>Current meaning of Reporting</h2>
+<p class="first">E-Mail me!</p>
+<p class="last plantuml">
+<img src="_images/plantuml-23dab866e4d49bb7df510c58e6c452919062a82f.png" alt="!include ../diagrams/current_distribution.puml" />
+</p>
+</section>
+<section class="last">
+<h2>datablocks Report Distribution</h2>
+<p class="first last plantuml">
+<img src="_images/plantuml-c79c5a81f232423f120beaf3f3de5ab3631ebaeb.png" alt="!include ../diagrams/datablocks_distribution.puml" />
+</p>
+</section>
+</section>
+<section>
+<h2>datablocks USP</h2>
+<small class="first">
+We have three...</small>
+<p>datablocks BI Extensions</p>
+<p>datablocks Service Integrations</p>
+<p class="last">datablocks Report Distribution</p>
+</section>
+</div>
+
+
+      </div>
+    </div>
+    
+<script src="_static/js/jquery.min.js"></script>
+<script src="_static/lib/js/head.min.js"></script>
+<script src="_static/js/reveal.js"></script>
+    <script>
+
+      // change DOM for reveal.js
+      $("div.section h1").remove();
+      var content = $("div.section").html();
+      $("div.section").remove();
+      $("div.slides").html(content);
+
+      Reveal.initialize({
+        width: 960,
+        height: 700,
+
+        margin: 0.01,
+
+        minScale: 0.2,
+        maxScale: 1.0,
+
+        controls: true,
+        progress: true,
+        history: false,
+        center: true,
+
+        keyboard : true,
+        overview: true,
+        touch: true,
+        loop: false,
+        rtl: false,
+        fragments: true,
+
+        autoSlide: 0,
+        mouseWheel: false,
+        rollingLinks: false,
+        previewLinks: false,
+
+        transitionSpeed: "default",
+        backgroundTransition: "default",
+
+        slideNumber: false,
+        embedded: false,
+        autoSlideStoppable: true,
+        hideAddressBar: true,
+
+        parallaxBackgroundImage: "",
+        parallaxBackgroundSize: "",
+
+        focusBodyOnPageVisiblityChange: true,
+
+        viewDistance: 3,
+
+        transition: Reveal.getQueryHash().transition || "default",
+
+        
+
+        dependencies: [
+           { src: '_static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+           { src: '_static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+           { src: '_static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+           { src: '_static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+           { src: '_static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+           { src: '_static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+    
+  </body>
+</html>
