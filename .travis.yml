@@ -15,7 +15,7 @@ before_install:
 install:
   - "pip install ablog"
   - "pip install sphinxcontrib-plantuml"
-  - "sphinxjp.themes.revealjs"
+  - "pip install sphinxjp.themes.revealjs"
 
 script:
   - cd presentations
