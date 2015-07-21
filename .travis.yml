@@ -24,7 +24,7 @@ script:
   - make html
 
 after_success:
-  - cat DEPLOY_KEY > deploy_key.pem
+  - cat $DEPLOY_KEY > deploy_key.pem
   - git config --global user.name "Daniel Woste"
   - git config --global user.email "daniel.woste@useblocks.com"
   - git config --global push.default simple
