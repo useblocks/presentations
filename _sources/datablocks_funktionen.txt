@@ -88,9 +88,9 @@ datablocks Funktionen
             datablocks integriert sich in bestehende SW-Landschaften,
             ohne laufende Abläufe oder Prozesse zu gefährden.
 
-            Dadurch spart ein Unternehmen hohen Umstellungskosten,
+            Dadurch spart ein Unternehmen hohe Umstellungskosten,
             kann unterschiedliche und bedarfsspezifische Lösungen einsetzen
-            und kann auch in Zukunft bei der SW-Aufwahl frei agieren.
+            und kann auch in Zukunft bei der SW-Auswahl frei agieren.
 
         .. uml::
             !include ../diagrams/datablocks_services.puml
@@ -103,7 +103,7 @@ datablocks Funktionen
 
     .. revealjs:: Kennzahlen Reports: Teil 1
 
-        Verbreiteste Lösung: E-Mails!
+        Verbreitetste Lösung: E-Mails!
 
         .. uml::
 
@@ -117,7 +117,7 @@ datablocks Funktionen
         .. rv_small::
             datablocks bietet zahlreiche Kanäle zum Erreichen der notwendigen Kennzahlen-Empfänger an.
 
-            Dadurchch sparen Unternehmens-Mitarbeiter viel Zeit, da sie nur die Zahlen bekommen, die sie interessieren, und
+            Dadurch sparen Unternehmensmitarbeiter viel Zeit, da sie nur die Zahlen bekommen, die sie interessieren, und
             weil die Zahlen in ihre täglichen Arbeitswerkzeugen geliefert werden.
 
         .. uml::
