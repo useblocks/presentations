@@ -130,6 +130,7 @@ html_theme_options = {
     "height": 700,
     "margin": 0.01,
     "history": False,
+    "hide_address_bar": True,
     }
 
 # Add any paths that contain custom themes here, relative to this directory.
