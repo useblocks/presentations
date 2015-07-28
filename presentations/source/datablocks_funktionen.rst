@@ -18,19 +18,6 @@ datablocks Funktionen
 
     .. revealjs:: Metriken und Kennzahl: Teil 1
 
-        .. linechart::
-
-            teamA: 15, 35, 20, 40
-            teamA.color: ffcc00
-            teamA.axis: x
-            teamA.axis_label: "2w ago", "today"
-            teamB: 60, 75, 60, 30
-            teamB.color: A2AB58
-            teamC: 10, 26, 32, 26
-            teamC.color: 67BCDB
-            teamD: 20, 60, 50, 80
-            teamD.color: E44424
-
         Beantworten Metriken alle Fragen?
 
         .. rv_small::
