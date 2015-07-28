@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>datablocks Einleitung &mdash; useblocks Praesentationen 1.0 Dokumentation</title>
+
+    
+
+    
+<link rel="stylesheet" href="_static/css/reveal.css">
+<link rel="stylesheet" href="_static/css/theme/league.css" id="theme">
+<link rel="stylesheet" href="_static/lib/css/zenburn.css">
+<link rel="stylesheet" href="_static/revealjs.css" type="text/css" />
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if(window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '_static/css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="_static/lib/js/html5shiv.js"></script>
+    <![endif]-->
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+  <div class="section" id="datablocks-einleitung">
+<h1>datablocks Einleitung<a class="headerlink" href="#datablocks-einleitung" title="Link zu dieser Überschrift">¶</a></h1>
+<section>
+<h2>datablocks Einleitung</h2>
+<blockquote class="first">
+<div>Eine kurze Einleitung in die Motivation von datablocks</div></blockquote>
+<small class="last">
+<p class="first">Mit ⇒ geht es weiter...</p>
+<p>Erstellt vom <a class="reference external" href="http://useblocks.github.io">useblocks team</a></p>
+<p class="last">Zu den anderen <a class="reference internal" href="index.html#start"><span>useblocks Präsentationen</span></a></p>
+</small>
+</section>
+<section>
+<section class="first">
+<h2>Heutige Arbeitsweise Teil 1</h2>
+<p class="first last plantuml">
+<img src="_images/plantuml-b1e4804690e1c0b53356a7d4b1c28f1031fcf24b.png" alt="package &quot;Abteilung Entwicklung&quot; {
+   object Wertschöpfung {
+   Zu kontrollierende Wertschöpfung
+   }
+
+   object Sammlung {
+      Sammlung von Rohdaten
+   }
+   object Analyse {
+      Analyse und Definition von Metriken
+   }
+   object Speicherung {
+      Speicherung von Metriken
+   }
+   object Anzeige {
+      Bereitstellung von Metriken
+   }
+}
+
+Wertschöpfung .&gt; Sammlung
+Sammlung -&gt; Analyse
+Analyse -&gt; Speicherung
+Speicherung -&gt; Anzeige" />
+</p>
+</section>
+<section>
+<h2>Heutige Arbeitsweise Teil 2</h2>
+<p class="first">Bei mehreren Wertschöpfungsketten in unterschiedlichsten Abteilungen
+finden sich zahlreiche, unterschiedlichste Toolketten im Einsatz.</p>
+<p class="plantuml">
+<img src="_images/plantuml-6e117d79a01845e281d55dcd46b36cd841c69270.png" alt="package &quot;Abteilung Entwicklung&quot; {
+   object Suite_1 #FFCC00
+}
+package &quot;Abteilung Finanzen&quot; {
+   object Tool_A #434344
+   object Tool_B #456723
+}
+package &quot;Abteilung Personal&quot; {
+   object Tool_C #896344
+   object Tool_D #134534
+   object Tool_E #456345
+}
+package &quot;Abteilung Vertrieb&quot; {
+   object Suite_2 #757883
+   object Tool_F  #793564
+}" />
+</p>
+<p class="last">Abteilungs- und toolübergreifende Verweise oder gar Analysen sind kaum möglich.</p>
+</section>
+<section class="last">
+<h2>Heutige Arbeitsweise Teil 3</h2>
+<p class="first">Auch die erhobenen Metriken und ihre weiterführende Informationen sind nicht einheitlich definiert und
+verwend- oder vergleichbar.</p>
+<small class="last">
+<p class="first">Unterschiedliche Definition von Qualität</p>
+<p>Unterschiedliche Formeln zur Berechnung von Reakationsgeschwindigkeiten</p>
+<p class="last">Fehlende Hintergrundinformation zu: guten/schlechten Bereichen, Verantwortlichkeiten, Einfluss auf Firmenziele, ...</p>
+</small>
+</section>
+</section>
+<section>
+<section class="first">
+<h2>Arbeitsweise mit datablocks Teil 1</h2>
+<p class="first">datablocks Integration</p>
+<blockquote class="last">
+<div><small>
+<p class="first">datablocks verbindet sich mit sämtlichen Kennzahlen-
+Tools und macht eine gemeinschaftliche Verwendung und Pflege
+möglich.</p>
+<p>Sie können für jeden Aufgabenbreich ein anderes Tools einsetzten,
+so dass Sie in der lage sind für die Erhebung das Tool von Abteilung A,
+die Überwachung etwas von Abteilung B und für die Steuerung ein Werkzeug der
+Abteilung C zu verwenden.</p>
+<p>BILD mit EBENEN von db</p>
+<p class="last">(Spätere Punkte: open source, )</p>
+</small>
+</div></blockquote>
+</section>
+<section class="last">
+<h2>Arbeitsweise mit datablocks Teil 2</h2>
+<p class="first">datablocks Data Extensions</p>
+<small class="last">
+<p class="first">Egal, ob ein tool sämtliche Daten schon selbst erhoben hat
+oder ob es nur die nackten Zahlen liefert. datablocks erlaubt ihnen
+sämtliche Kennzahlen mit Information zu verfeinern und diese für
+die nachgelagerte Tätigkeiten mitzuverwenden.</p>
+<p>Z.B den Aktions-Verantwortlichen bei schlechten Zahlen zu informieren.</p>
+<p class="last">(spätere Punkte: Verständnis, Rollen, Verlinkung zu anderen Systemen, Statisitken und Verwendung)</p>
+</small>
+</section>
+</section>
+</div>
+
+
+      </div>
+    </div>
+    
+<script src="_static/js/jquery.min.js"></script>
+<script src="_static/lib/js/head.min.js"></script>
+<script src="_static/js/reveal.js"></script>
+    <script>
+
+      // change DOM for reveal.js
+      $("div.section h1").remove();
+      var content = $("div.section").html();
+      $("div.section").remove();
+      $("div.slides").html(content);
+
+      Reveal.initialize({
+        width: 960,
+        height: 700,
+
+        margin: 0.01,
+
+        minScale: 0.2,
+        maxScale: 1.0,
+
+        controls: true,
+        progress: true,
+        history: false,
+        center: true,
+
+        keyboard : true,
+        overview: true,
+        touch: true,
+        loop: false,
+        rtl: false,
+        fragments: true,
+
+        autoSlide: 0,
+        mouseWheel: false,
+        rollingLinks: false,
+        previewLinks: false,
+
+        transitionSpeed: "default",
+        backgroundTransition: "default",
+
+        slideNumber: false,
+        embedded: false,
+        autoSlideStoppable: true,
+        hideAddressBar: true,
+
+        parallaxBackgroundImage: "",
+        parallaxBackgroundSize: "",
+
+        focusBodyOnPageVisiblityChange: true,
+
+        viewDistance: 3,
+
+        transition: Reveal.getQueryHash().transition || "default",
+
+        
+
+        dependencies: [
+           { src: '_static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+           { src: '_static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+           { src: '_static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+           { src: '_static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+           { src: '_static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+           { src: '_static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+    
+  </body>
+</html>
