@@ -51,100 +51,84 @@
 </small>
 </section>
 <section>
-<section class="first">
-<h2>Heutige Arbeitsweise Teil 1</h2>
-<p class="first last plantuml">
-<img src="_images/plantuml-b1e4804690e1c0b53356a7d4b1c28f1031fcf24b.png" alt="package &quot;Abteilung Entwicklung&quot; {
-   object Wertschöpfung {
-   Zu kontrollierende Wertschöpfung
-   }
-
-   object Sammlung {
-      Sammlung von Rohdaten
-   }
-   object Analyse {
-      Analyse und Definition von Metriken
-   }
-   object Speicherung {
-      Speicherung von Metriken
-   }
-   object Anzeige {
-      Bereitstellung von Metriken
-   }
-}
-
-Wertschöpfung .&gt; Sammlung
-Sammlung -&gt; Analyse
-Analyse -&gt; Speicherung
-Speicherung -&gt; Anzeige" />
-</p>
-</section>
-<section>
-<h2>Heutige Arbeitsweise Teil 2</h2>
-<p class="first">Bei mehreren Wertschöpfungsketten in unterschiedlichsten Abteilungen
-finden sich zahlreiche, unterschiedlichste Toolketten im Einsatz.</p>
-<p class="plantuml">
-<img src="_images/plantuml-6e117d79a01845e281d55dcd46b36cd841c69270.png" alt="package &quot;Abteilung Entwicklung&quot; {
-   object Suite_1 #FFCC00
-}
-package &quot;Abteilung Finanzen&quot; {
-   object Tool_A #434344
-   object Tool_B #456723
-}
-package &quot;Abteilung Personal&quot; {
-   object Tool_C #896344
-   object Tool_D #134534
-   object Tool_E #456345
-}
-package &quot;Abteilung Vertrieb&quot; {
-   object Suite_2 #757883
-   object Tool_F  #793564
-}" />
-</p>
-<p class="last">Abteilungs- und toolübergreifende Verweise oder gar Analysen sind kaum möglich.</p>
-</section>
-<section class="last">
-<h2>Heutige Arbeitsweise Teil 3</h2>
-<p class="first">Auch die erhobenen Metriken und ihre weiterführende Informationen sind nicht einheitlich definiert und
-verwend- oder vergleichbar.</p>
+<h2>datablocks Vision</h2>
+<blockquote class="first">
+<div>Vollautomatisierte Unternehmenssteuerung</div></blockquote>
 <small class="last">
-<p class="first">Unterschiedliche Definition von Qualität</p>
-<p>Unterschiedliche Formeln zur Berechnung von Reakationsgeschwindigkeiten</p>
-<p class="last">Fehlende Hintergrundinformation zu: guten/schlechten Bereichen, Verantwortlichkeiten, Einfluss auf Firmenziele, ...</p>
-</small>
-</section>
+Wegbegleitende Technologien für den Übergang</small>
 </section>
 <section>
 <section class="first">
-<h2>Arbeitsweise mit datablocks Teil 1</h2>
-<p class="first">datablocks Integration</p>
-<blockquote class="last">
-<div><small>
-<p class="first">datablocks verbindet sich mit sämtlichen Kennzahlen-
-Tools und macht eine gemeinschaftliche Verwendung und Pflege
-möglich.</p>
-<p>Sie können für jeden Aufgabenbreich ein anderes Tools einsetzten,
-so dass Sie in der lage sind für die Erhebung das Tool von Abteilung A,
-die Überwachung etwas von Abteilung B und für die Steuerung ein Werkzeug der
-Abteilung C zu verwenden.</p>
-<p>BILD mit EBENEN von db</p>
-<p class="last">(Spätere Punkte: open source, )</p>
-</small>
-</div></blockquote>
+<h2>Was ist dafür notwendig?</h2>
+</section>
+<section>
+<h2>Kennzahlen</h2>
+Nur was gemessen wird, kann gesteuert werden.</section>
+<section>
+<h2>Zugriff auf sämtliche Kennzahlen</h2>
+Nur wer alles weiß, hat den Überblick.</section>
+<section>
+<h2>Informationen zu den Kennzahlen</h2>
+Nackte Zahlen bringen keine Erleuchtung.</section>
+<section class="last">
+<h2>Anbindung spezialisierter Personen / Services</h2>
+Nur wer informiert wird, kann reagieren.</section>
+</section>
+<section>
+<section class="first">
+<h2>Welche Probleme bringen aktuelle Software-Lösungen für Kennzahlen mit?</h2>
+</section>
+<section>
+<h2>Monolithische Systeme</h2>
+Super Import, kaum unterstützter Export, keine Synchronisation.</section>
+<section>
+<h2>Zahlen sind alles</h2>
+Name, Beschreibung, Verantwortlichkeiten, Gute/Schlechte Bereiche? Fehlanzeige!</section>
+<section>
+<h2>Der Interessent kommt zum Anbieter</h2>
+Dashboards sind wie Shops in der Fußgängerzone: Sie haben keine Chance gegen den Versandhandel.</section>
+<section>
+<h2>Fokus auf den Controller</h2>
+<p class="first">Was ist mit Reaktionsverantwortlichen, Web-Services, fach- und abteilungsfremden Personen?</p>
+<p class="last">&#8220;Der Endanwender wird geschult, damit die Dashboards verständlich sind&#8221;.</p>
 </section>
 <section class="last">
-<h2>Arbeitsweise mit datablocks Teil 2</h2>
-<p class="first">datablocks Data Extensions</p>
+<h2>Kennzahlen sind nicht eindeutig referenzierbar</h2>
+&#8220;Die Kennzahl im Excel-Dokument FehlerrateTeams.xls , 2. Blatt, 3. Diagramm, blaue Linie sieht schlecht aus&#8221;</section>
+</section>
+<section>
+<section class="first">
+<h2>Was bietet datablocks?</h2>
+</section>
+<section>
+<ol class="first last arabic simple">
+<li>Integration</li>
+<li>Extension</li>
+<li>Distribution</li>
+</ol>
+</section>
+<section>
+<h2>1. Integration</h2>
+<p class="first">Wir integrieren Kennzahlen-Software. Wir ersetzen sie nicht!</p>
 <small class="last">
-<p class="first">Egal, ob ein tool sämtliche Daten schon selbst erhoben hat
-oder ob es nur die nackten Zahlen liefert. datablocks erlaubt ihnen
-sämtliche Kennzahlen mit Information zu verfeinern und diese für
-die nachgelagerte Tätigkeiten mitzuverwenden.</p>
-<p>Z.B den Aktions-Verantwortlichen bei schlechten Zahlen zu informieren.</p>
-<p class="last">(spätere Punkte: Verständnis, Rollen, Verlinkung zu anderen Systemen, Statisitken und Verwendung)</p>
-</small>
+Monolithische Systeme werden mit uns zu Teamplayern!</small>
+</section>
+<section>
+<h2>2. Extensions</h2>
+Wir erweitern jede Kennzahl um steuerungswichtige Informationen und Funktionen.</section>
+<section>
+<h2>3. Distribution</h2>
+Wir bringen Zahlen und Informationen bedarfsgerecht zum Interessenten.</section>
+<section class="last">
+<h2>3. Distribution</h2>
+<p class="first">Und wir geben jeder Kennzahl eine unternehmensweit eindeutige ID.</p>
+<small class="last">
+Analog zu Tickets-IDs, Produktnummern, Kostenstellen, Personalnummern, ...</small>
 </section>
 </section>
+<section>
+<h2>datablocks</h2>
+Vollautomatisierte Unternehmenssteuerung</section>
 </div>
 
 

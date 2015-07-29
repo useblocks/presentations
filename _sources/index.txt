@@ -10,7 +10,11 @@ useblocks Präsentationen
 
     Präsentationen:
 
+    :doc:`datablocks_einleitung`
+
+
     :doc:`datablocks_funktionen`
+
 
     .. rv_small::
         | Knappe Einführung in die Bedienung:
