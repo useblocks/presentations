@@ -15,108 +15,97 @@ datablocks Einleitung
 
     Zu den anderen :ref:`start`
 
+.. revealjs:: datablocks Vision
+
+    Vollautomatisierte Unternehmenssteuerung
+
+   .. rv_small::
+
+      Wegbegleitende Technologien für den Übergang
+
+
 .. revealjs::
 
-   .. revealjs:: Heutige Arbeitsweise Teil 1
+   .. revealjs:: Was ist dafür notwendig?
 
-      .. uml::
-         package "Abteilung Entwicklung" {
-            object Wertschöpfung {
-            Zu kontrollierende Wertschöpfung
-            }
+   .. revealjs:: Kennzahlen
 
-            object Sammlung {
-               Sammlung von Rohdaten
-            }
-            object Analyse {
-               Analyse und Definition von Metriken
-            }
-            object Speicherung {
-               Speicherung von Metriken
-            }
-            object Anzeige {
-               Bereitstellung von Metriken
-            }
-         }
+       Nur was gemessen wird, kann gesteuert werden.
 
-         Wertschöpfung .> Sammlung
-         Sammlung -> Analyse
-         Analyse -> Speicherung
-         Speicherung -> Anzeige
+   .. revealjs:: Zugriff auf sämtliche Kennzahlen
 
+       Nur wer alles weiß, hat den Überblick.
 
+   .. revealjs:: Informationen zu den Kennzahlen
 
-   .. revealjs:: Heutige Arbeitsweise Teil 2
+      Nackte Zahlen bringen keine Erleuchtung.
 
-      Bei mehreren Wertschöpfungsketten in unterschiedlichsten Abteilungen
-      finden sich zahlreiche, unterschiedlichste Toolketten im Einsatz.
+   .. revealjs:: Anbindung spezialisierter Personen / Services
 
-      .. uml::
-         package "Abteilung Entwicklung" {
-            object Suite_1 #FFCC00
-         }
-         package "Abteilung Finanzen" {
-            object Tool_A #434344
-            object Tool_B #456723
-         }
-         package "Abteilung Personal" {
-            object Tool_C #896344
-            object Tool_D #134534
-            object Tool_E #456345
-         }
-         package "Abteilung Vertrieb" {
-            object Suite_2 #757883
-            object Tool_F  #793564
-         }
+      Nur wer informiert wird, kann reagieren.
+
+.. revealjs::
+
+   .. revealjs:: Welche Probleme bringen aktuelle Software-Lösungen für Kennzahlen mit?
+
+   .. revealjs:: Monolithische Systeme
+
+      Super Import, kaum unterstützter Export, keine Synchronisation.
+
+   .. revealjs:: Zahlen sind alles
+
+      Name, Beschreibung, Verantwortlichkeiten, Gute/Schlechte Bereiche? Fehlanzeige!
+
+   .. revealjs:: Der Interessent kommt zum Anbieter
+
+      Dashboards sind wie Shops in der Fußgängerzone: Sie haben keine Chance gegen den Versandhandel.
+
+   .. revealjs:: Fokus auf den Controller
+
+      Was ist mit Reaktionsverantwortlichen, Web-Services, fach- und abteilungsfremden Personen?
+
+      "Der Endanwender wird geschult, damit die Dashboards verständlich sind".
+
+   .. revealjs:: Kennzahlen sind nicht eindeutig referenzierbar
+
+      "Die Kennzahl im Excel-Dokument FehlerrateTeams.xls , 2. Blatt, 3. Diagramm, blaue Linie sieht schlecht aus"
 
 
-      Abteilungs- und toolübergreifende Verweise oder gar Analysen sind kaum möglich.
+.. revealjs::
 
+   .. revealjs:: Was bietet datablocks?
 
-   .. revealjs:: Heutige Arbeitsweise Teil 3
+   .. revealjs::
 
-      Auch die erhobenen Metriken und ihre weiterführende Informationen sind nicht einheitlich definiert und
-      verwend- oder vergleichbar.
+      1. Integration
+
+      2. Extension
+
+      3. Distribution
+
+   .. revealjs:: 1. Integration
+
+      Wir integrieren Kennzahlen-Software. Wir ersetzen sie nicht!
 
       .. rv_small::
-         Unterschiedliche Definition von Qualität
+         Monolithische Systeme werden mit uns zu Teamplayern!
 
-         Unterschiedliche Formeln zur Berechnung von Reakationsgeschwindigkeiten
+   .. revealjs:: 2. Extensions
 
-         Fehlende Hintergrundinformation zu: guten/schlechten Bereichen, Verantwortlichkeiten, Einfluss auf Firmenziele, ...
+        Wir erweitern jede Kennzahl um steuerungswichtige Informationen und Funktionen.
 
+   .. revealjs:: 3. Distribution
 
-.. revealjs::
+      Wir bringen Zahlen und Informationen bedarfsgerecht zum Interessenten.
 
-    .. revealjs:: Arbeitsweise mit datablocks Teil 1
+   .. revealjs:: 3. Distribution
 
-       datablocks Integration
+      Und wir geben jeder Kennzahl eine unternehmensweit eindeutige ID.
 
-        .. rv_small::
-           datablocks verbindet sich mit sämtlichen Kennzahlen-
-           Tools und macht eine gemeinschaftliche Verwendung und Pflege
-           möglich.
+      .. rv_small::
+         Analog zu Tickets-IDs, Produktnummern, Kostenstellen, Personalnummern, ...
 
-           Sie können für jeden Aufgabenbreich ein anderes Tools einsetzten,
-           so dass Sie in der lage sind für die Erhebung das Tool von Abteilung A,
-           die Überwachung etwas von Abteilung B und für die Steuerung ein Werkzeug der
-           Abteilung C zu verwenden.
+.. revealjs:: datablocks
 
-           BILD mit EBENEN von db
+    Vollautomatisierte Unternehmenssteuerung
 
-           (Spätere Punkte: open source, )
-
-
-    .. revealjs:: Arbeitsweise mit datablocks Teil 2
-
-       datablocks Data Extensions
-
-       .. rv_small::
-          Egal, ob ein tool sämtliche Daten schon selbst erhoben hat
-          oder ob es nur die nackten Zahlen liefert. datablocks erlaubt ihnen
-          sämtliche Kennzahlen mit Information zu verfeinern und diese für
-          die nachgelagerte Tätigkeiten mitzuverwenden.
-
-          Z.B den Aktions-Verantwortlichen bei schlechten Zahlen zu informieren.
-
-          (spätere Punkte: Verständnis, Rollen, Verlinkung zu anderen Systemen, Statisitken und Verwendung)
