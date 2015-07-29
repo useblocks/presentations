@@ -35,7 +35,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinxjp.themes.revealjs',
     'sphinxcontrib.plantuml',
-    'sphinxcontrib.googlechart'
+    #'sphinxcontrib.googlechart'
 ]
 
 plantuml = 'java -jar ./plantuml.jar'
